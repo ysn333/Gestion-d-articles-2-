@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Martian Mono', monospace;
+
+
+}
+
+.head {
+    background-color: rgb(30 31 64);
+    
+}
+
+.logo {
+    cursor:pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:92%;
+    margin: 0 6%;
+}
+
+.logo img {
+    cursor:pointer;
+    width: 15%;
+}
+
+.account img {
+    cursor:pointer;
+    width: 72%;
+    margin-left: 1%;
+}
+
+#button {
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: 82%;
+    padding: 15px 61px;
+    font-size: 14px;
+    background-color: rgb(0, 199, 0);
+    outline: none;
+    border: 1px solid rgb(0, 199, 0);
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+/* #button:hover{
+  background-color : rgba(0, 199, 0, 0.89);
+} */
+
+.inputs button {
+    width: 14vw;
+    background: url(icons8-plus-48.png) no-repeat;
+    background-position: 70.5%;
+    background-size: 1.9em;
+}
+
+#cate{
+    
+    display: none;
+}
+
+.search input {
+    border-radius: 25px;
+    margin-left: -15%;
+    width: 35vw;
+    padding: 8px;
+    border: 1px solid #d9d9d9;
+    background: url(icons8-search-65.png) no-repeat;
+    background-position: 98.5%;
+    background-size: 2.5em;
+    background-color: rgb(255, 255, 255);
+    font-size: 0.9vw;
+    letter-spacing: 1px;
+}
+  
+.search input:hover {
+    border: 1px solid #b9b9b9;
+    border-top-color: #a0a0a0;
+  }
+  
+.search input:focus {
+    outline: none;
+    border: 3px solid #4d90fe;
+  }
+
+
+
+.from-wrapper {
+    display: none;
+
+}
+
+.from-wrapper.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    position: fixed;
+}
+
+#formation {
+    color:  rgb(0, 199, 0);
+    display: flex;
+    align-items: flex-end;
+    text-align: start;
+    height: 13%;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 37%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3vw;
+    background-color: rgb(255, 255, 255);
+    width: 63%;
+    padding: 20px 50px;
+    border-radius: 5px;
+
+}
+
+.deleteAll{
+    color: rgb(0, 199, 0);
+    display: flex;
+    align-items: flex-end;
+    text-align: start;
+    height: 27%;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 36%;
+    transform: translate(-50%, -50%);
+    font-size: 1.6vw;
+    background-color:  rgb(30 31 64);
+    width: 34%;
+    padding: 2px 6px;
+    border-radius: 5px;
+    position: fixed;
+}
+
+.popup{
+    display: none;
+}
+
+
+.popup.action-botton{
+    display: none;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 101%;
+    width: 100%;
+    position: absolute;
+    top: -11px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    position: fixed;
+}
+
+.delet{
+    text-align: center;
+    width: 100%;
+}
+
+.delet p{
+    width: 100%;
+    margin-bottom: 11%;
+    color: rgb(0, 0, 0);
+}
+
+.delet p span{
+    color: #b90019;
+}
+
+.break{
+    cursor:pointer;
+    position: absolute;
+    width: 5%;
+    position: absolute;
+    background-color: red;
+    color: #ffffff;
+    margin: -9% 1% 1% 93%;
+    border-radius: 65%;
+    text-align: center;
+}
+
+.delet button{
+    font-size: 1vw;
+    cursor:pointer;
+    padding: 3% 0 3% 0;
+    float: left;
+}
+
+#DeleteData {
+    color: #fff;
+    background-color:#a0a0a0;
+    width: 50%;
+}
+
+.cancelAll{
+    color: #fff;
+    background-color:#b90019 ;
+    width: 50%;
+}
+
+#formation img{
+
+    float: left;
+    margin-right: 8px;
+}
+
+.mobileForm{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 20px;
+}
+
+tr:nth-child(even), table.output thread> tr {
+    background-color: rgb(0, 0, 0);
+}
+
+table {
+    border-radius: 50px 50PX 2PX 2PX;
+    padding: 17px 8px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30 31 64) ;
+    width: 95%;
+    text-align: center;
+    margin-top: 85px ;
+    margin-left: 3%;
+}
+
+tbody {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px ;
+}
+
+.outlined{
+  font-size: 2.7vw;
+  color: black;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.material-symbols-outlined:hover{
+    background-color: rgba(83, 83, 83, 0.199);
+
+}
+
+
+
+#submit {
+    cursor:pointer;
+    outline: none;
+    border: 1px solid rgb(0, 199, 0);
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(255 255 255);
+    background-color: rgb(0, 199, 0);
+    margin: 20px -20px;
+    padding: 10px 36px;
+    letter-spacing: 1.2px;
+}
+
+#submit:hover{
+    background-color: rgba(0, 199, 0, 0.842);
+}
+
+#update {
+    cursor:pointer;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(255 255 255);
+    background-color: rgb(60 72 233);
+    margin: 20px -20px;
+    padding: 11px 24px;
+    letter-spacing: 1.2px;
+}
+
+#update:hover{
+    background-color: rgb(64, 99, 601);
+}
+
+#deletee {
+    letter-spacing: 1.2px;
+    cursor:pointer;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    font-weight: bold;
+    color: rgb(255 255 255);
+    background-color: #b90019;
+    margin: 20px 0px;
+    padding: 11px 24px;
+}
+
+#deletee:hover{
+    background-color: #db0421;
+}
+
+
+.cancel {
+    cursor:pointer;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #b90019;
+    font-weight: bold;
+    color: rgb(255 255 255);
+    background-color: #b90019;
+    margin: 20px 0px;
+    padding: 10px 36px;
+}
+
+p {
+    color: #b90019;
+}
+
+.mobileForm input {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(74, 74, 74, 0.2), 0 6px 20px 0 rgba(116, 116, 116, 0.19);
+    border-radius: 5px;
+    outline: none;
+    border: NONE;
+    padding: 15px;
+    width: 100%;
+}
+
+#slidshow {
+    position: absolute;
+    margin-top: -8%;
+    margin-left: 75%;
+    width: 6%;
+    height: 110px;
+    -ms-transform: rotate(20deg);
+    transform: rotate(17deg);
+ 
+}
+
+
+.input .help-block {
+    text-transform:none;
+  
+}
+
+.marque {
+    display: flex;
+    width: 100%;
+}
+
+.container-select {
+    width: 93%;
+    margin-top: 2.5%;
+}
+
+#prix {
+    width: 100%;
+}
+
+.selectd {
+    background-color: #ffffff;
+    padding-right: 100px;
+    box-shadow: 0 4px 8px 0 rgba(74, 74, 74, 0.2), 0 6px 20px 0 rgba(116, 116, 116, 0.19);
+    border-radius: 5px;
+    outline: none;
+    border: NONE;
+    padding: 15px;
+    width: 100%;
+}
+
+.input-selectd {
+    background-color: #ffffff;
+    padding-right: 100px;
+    box-shadow: 0 4px 8px 0 rgba(74, 74, 74, 0.2), 0 6px 20px 0 rgba(116, 116, 116, 0.19);
+    border-radius: 5px;
+    outline: none;
+    border: NONE;
+    padding: 15px;
+     width: 93%;
+}
+
+.marque {
+    width: 100%;
+}
+
+.container-input {
+    margin-top: 2.5%;
+    margin-left: -4%;
+}
+
+.type-selectd {
+    margin-top: 2.5%;
+}
+
+.promotion-radio {
+    margin-top: 6%!important;
+    margin: -1px;
+}
+
+
+
+.date {
+    margin-top: 2.5%;
+}
+
+.date input {
+    width: 100%;
+   
+}
+
+.promotion-radio input {
+    background-color: #ffffff;
+    background: none;
+    box-shadow:none;
+    border: NONE;
+    width: 33%
+}
+
+.promotion {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px){
+    .search input {
+        display: none;
+    }
+    #formation {
+        margin-top: 22%;
+        margin-left: 37%;
+        transform: translate(-50%, -50%);
+    }
+    #button {
+        margin-top: 19%;
+        margin-left: 53%;
+        padding: 14px 114px;
+        font-size: 14px;
+    }
+    .inputs button {
+        width: -17vw;
+        background: none;
+    }
+    .head {
+        
+        width: 169%;
+    }
+    #update {
+        padding: 11px 0px;
+    }
+    #deletee {
+        padding: 10px 6px;
+    }
+}
